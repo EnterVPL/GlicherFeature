@@ -2,8 +2,13 @@ extends StaticBody2D
 
 export(NodePath) var next_coin = null
 export(NodePath) var unlock_tiles = null
+export var been_change_map := false
+export(String, FILE) var new_map
 
 func coin_collected():
+	if(been_change_map):
+		get_tree().change_scene(new_map)
+		return
 	if(unlock_tiles == null):
 		end_game()
 		return
