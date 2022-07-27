@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/music/projekcik 57.mp3" type="AudioStream" id=1]
+[ext_resource path="res://src/Autoload/BackgroundMusic.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "GlichMusic"
+length = 20.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:pitch_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9, 5.5, 7.2, 9.1, 9.8, 10.3, 11.7, 14.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.53, 1.0, 1.0, 1.16, 1.25, 1.23775, 0.89, 1.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:pitch_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.53 ]
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -8.873
+pitch_scale = 0.53
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "GlichMusic"
+anims/GlichMusic = SubResource( 1 )
+anims/RESET = SubResource( 2 )

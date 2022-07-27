@@ -9,7 +9,7 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "EditorVCSInterface",
+"base": "",
 "class": "GitAPI",
 "language": "NativeScript",
 "path": "res://addons/godot-git-plugin/git_api.gdns"
@@ -21,8 +21,15 @@ _global_script_class_icons={
 [application]
 
 config/name="GlicherFeature"
-run/main_scene="res://src/maps/Map1.tscn"
+config/description="Glicher Pony has featuers"
+run/main_scene="res://src/maps/MainScreen.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GlobalSignals="*res://src/Autoload/GlobalSignals.gd"
+MaxFramerate="*res://src/Autoload/MaxFramerate.gd"
+BackgroundMusic="*res://src/Autoload/BackgroundMusic.tscn"
 
 [display]
 
@@ -72,9 +79,11 @@ jump={
 2d_render/layer_1="Terren"
 2d_render/layer_2="Coins"
 2d_render/layer_3="Enemies"
+2d_render/layer_4="Player"
 2d_physics/layer_1="Terren"
 2d_physics/layer_2="Coins"
 2d_physics/layer_3="Enemies"
+2d_physics/layer_4="Player"
 
 [physics]
 
@@ -82,4 +91,5 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+quality/intended_usage/framebuffer_allocation=0
 environment/default_environment="res://default_env.tres"

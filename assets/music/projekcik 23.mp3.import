@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/projekcik 23.mp3-df63151c39394dbfe687334a6cd68d53.mp3str"
+
+[deps]
+
+source_file="res://assets/music/projekcik 23.mp3"
+dest_files=[ "res://.import/projekcik 23.mp3-df63151c39394dbfe687334a6cd68d53.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
