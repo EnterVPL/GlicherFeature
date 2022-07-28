@@ -231,6 +231,8 @@ unlock_tiles = NodePath("../../TileMap5")
 [node name="Coin5" parent="Coins" instance=ExtResource( 5 )]
 visible = false
 position = Vector2( 732, 278 )
+been_change_map = true
+new_map = "res://src/maps/map3.tscn"
 
 [node name="Enemeis" type="Node" parent="."]
 

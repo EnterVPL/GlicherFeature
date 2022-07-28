@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/big_monster.mp3-071e60549954798605d2f454f413a75f.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/big_monster.mp3"
+dest_files=[ "res://.import/big_monster.mp3-071e60549954798605d2f454f413a75f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=6000.0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/i_like_to_be_fast.mp3-ce27f3853fa4397cac396a20dbb66183.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/i_like_to_be_fast.mp3"
+dest_files=[ "res://.import/i_like_to_be_fast.mp3-ce27f3853fa4397cac396a20dbb66183.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
